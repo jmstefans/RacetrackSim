@@ -7,3 +7,10 @@ C:\Users\Rommel\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\
 C:\Users\Rommel\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.csproj.GenerateResource.Cache
 C:\Users\Rommel\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.exe
 C:\Users\Rommel\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.pdb
+C:\Users\John\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\bin\Debug\ADayAtTheRaces.exe.config
+C:\Users\John\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.exe
+C:\Users\John\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.pdb
+C:\Users\John\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.Form1.resources
+C:\Users\John\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.Properties.Resources.resources
+C:\Users\John\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.csproj.GenerateResource.Cache
