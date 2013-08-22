@@ -25,11 +25,10 @@ namespace ADayAtTheRaces
             */
         }
 
+        //Reset location to start line.
         public void TakeStartingPosition()
         {
-            /*TODO:
-             * 1. Reset location to start line.
-            */
+            this.Location = 0;
         }
     }
 }
