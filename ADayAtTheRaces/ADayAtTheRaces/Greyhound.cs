@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace ADayAtTheRaces
 {
-    class Greyhound
+    public class Greyhound
     {
         public int StartingPosition;
         public int RacetrackLength;
