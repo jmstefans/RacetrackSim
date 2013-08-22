@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ADayAtTheRaces
 {
@@ -11,15 +12,23 @@ namespace ADayAtTheRaces
         public int Amount;
         public int Dog;
         public Guy Bettor;
+        
+        public Bet(int anAmount, int aDog, Guy aGuy)
+        {
+            Amount = anAmount;
+            Dog = aDog;
+            Bettor = aGuy;
+        }
 
+        //Return a string representing the Bet.
         public string GetDescription()
         {
-            /* TODO:
-             * 1. Initialize string.
-             * 2. Add Bettor's name, how much cash was bet, and which dog was bet on to string.
-             * 2a. Ex: "Joe bets $8 on dog #4."
-             * 2b. If amount is 0, "Joe hasn't placed a bet."
-             */
+            if (Amount > 0)
+                return Bettor.Name + " bets $" + Amount + " on dog #" + Dog;
+            else if (Amount == 0)
+                return Bettor.Name + " hasn't placed a bet.";
+            else 
+                MessageBox.Show("You can't make a bet with a negative amount.");
         }
 
         public int PayOut(int Winner)
