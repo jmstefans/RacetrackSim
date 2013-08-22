@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace ADayAtTheRaces
 {
-    class Guy
+    public class Guy
     {
         public string Name;
         public Bet MyBet;
