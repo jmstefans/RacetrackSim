@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADayAtTheRaces
 {
-    class Bet
+    public class Bet
     {
         public int Amount;
         public int Dog;
