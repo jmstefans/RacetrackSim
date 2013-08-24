@@ -27,8 +27,11 @@ namespace ADayAtTheRaces
                 return Bettor.Name + " bets $" + Amount + " on dog #" + Dog;
             else if (Amount == 0)
                 return Bettor.Name + " hasn't placed a bet.";
-            else 
+            else
+            {
                 MessageBox.Show("You can't make a bet with a negative amount.");
+                return "Invalid bet.";
+            }
         }
 
         public int PayOut(int Winner)

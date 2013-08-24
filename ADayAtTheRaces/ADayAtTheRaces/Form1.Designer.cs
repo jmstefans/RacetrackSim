@@ -36,35 +36,35 @@
             this.Dog2PictureBox = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.BettingParlorGroupBox = new System.Windows.Forms.GroupBox();
-            this.minimumBetLabel = new System.Windows.Forms.Label();
-            this.joeRadioButton = new System.Windows.Forms.RadioButton();
-            this.bobRadioButton = new System.Windows.Forms.RadioButton();
-            this.alRadioButton = new System.Windows.Forms.RadioButton();
-            this.betsLabel = new System.Windows.Forms.Label();
-            this.raceButton = new System.Windows.Forms.Button();
-            this.joeBetLabel = new System.Windows.Forms.Label();
-            this.bobBetLabel = new System.Windows.Forms.Label();
-            this.alBetLabel = new System.Windows.Forms.Label();
-            this.betsButton = new System.Windows.Forms.Button();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.amountUpDown = new System.Windows.Forms.NumericUpDown();
-            this.betBucksOnDogNumLabel = new System.Windows.Forms.Label();
             this.dogNumUpDown = new System.Windows.Forms.NumericUpDown();
+            this.betBucksOnDogNumLabel = new System.Windows.Forms.Label();
+            this.amountUpDown = new System.Windows.Forms.NumericUpDown();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.betsButton = new System.Windows.Forms.Button();
+            this.alBetLabel = new System.Windows.Forms.Label();
+            this.bobBetLabel = new System.Windows.Forms.Label();
+            this.joeBetLabel = new System.Windows.Forms.Label();
+            this.raceButton = new System.Windows.Forms.Button();
+            this.betsLabel = new System.Windows.Forms.Label();
+            this.alRadioButton = new System.Windows.Forms.RadioButton();
+            this.bobRadioButton = new System.Windows.Forms.RadioButton();
+            this.joeRadioButton = new System.Windows.Forms.RadioButton();
+            this.minimumBetLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog4PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog3PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog2PictureBox)).BeginInit();
             this.BettingParlorGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.amountUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amountUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // racetrackPictureBox
             // 
             this.racetrackPictureBox.Location = new System.Drawing.Point(12, 12);
             this.racetrackPictureBox.Name = "racetrackPictureBox";
-            this.racetrackPictureBox.Size = new System.Drawing.Size(936, 293);
+            this.racetrackPictureBox.Size = new System.Drawing.Size(936, 300);
             this.racetrackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.racetrackPictureBox.TabIndex = 0;
             this.racetrackPictureBox.TabStop = false;
@@ -128,37 +128,94 @@
             this.BettingParlorGroupBox.TabStop = false;
             this.BettingParlorGroupBox.Text = "Betting Parlor";
             // 
-            // minimumBetLabel
+            // dogNumUpDown
             // 
-            this.minimumBetLabel.AutoSize = true;
-            this.minimumBetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimumBetLabel.Location = new System.Drawing.Point(7, 34);
-            this.minimumBetLabel.Name = "minimumBetLabel";
-            this.minimumBetLabel.Size = new System.Drawing.Size(124, 15);
-            this.minimumBetLabel.TabIndex = 0;
-            this.minimumBetLabel.Text = "minimumBetLabel";
+            this.dogNumUpDown.Location = new System.Drawing.Point(382, 201);
+            this.dogNumUpDown.Name = "dogNumUpDown";
+            this.dogNumUpDown.Size = new System.Drawing.Size(46, 20);
+            this.dogNumUpDown.TabIndex = 13;
             // 
-            // joeRadioButton
+            // betBucksOnDogNumLabel
             // 
-            this.joeRadioButton.AutoSize = true;
-            this.joeRadioButton.Location = new System.Drawing.Point(10, 71);
-            this.joeRadioButton.Name = "joeRadioButton";
-            this.joeRadioButton.Size = new System.Drawing.Size(98, 17);
-            this.joeRadioButton.TabIndex = 1;
-            this.joeRadioButton.TabStop = true;
-            this.joeRadioButton.Text = "joeRadioButton";
-            this.joeRadioButton.UseVisualStyleBackColor = true;
+            this.betBucksOnDogNumLabel.AutoSize = true;
+            this.betBucksOnDogNumLabel.Location = new System.Drawing.Point(248, 203);
+            this.betBucksOnDogNumLabel.Name = "betBucksOnDogNumLabel";
+            this.betBucksOnDogNumLabel.Size = new System.Drawing.Size(110, 13);
+            this.betBucksOnDogNumLabel.TabIndex = 12;
+            this.betBucksOnDogNumLabel.Text = "bucks on dog number";
+            this.betBucksOnDogNumLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // bobRadioButton
+            // amountUpDown
             // 
-            this.bobRadioButton.AutoSize = true;
-            this.bobRadioButton.Location = new System.Drawing.Point(10, 111);
-            this.bobRadioButton.Name = "bobRadioButton";
-            this.bobRadioButton.Size = new System.Drawing.Size(102, 17);
-            this.bobRadioButton.TabIndex = 2;
-            this.bobRadioButton.TabStop = true;
-            this.bobRadioButton.Text = "bobRadioButton";
-            this.bobRadioButton.UseVisualStyleBackColor = true;
+            this.amountUpDown.Location = new System.Drawing.Point(176, 201);
+            this.amountUpDown.Name = "amountUpDown";
+            this.amountUpDown.Size = new System.Drawing.Size(46, 20);
+            this.amountUpDown.TabIndex = 11;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(25, 203);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(33, 13);
+            this.nameLabel.TabIndex = 10;
+            this.nameLabel.Text = "name";
+            // 
+            // betsButton
+            // 
+            this.betsButton.Location = new System.Drawing.Point(71, 192);
+            this.betsButton.Name = "betsButton";
+            this.betsButton.Size = new System.Drawing.Size(88, 34);
+            this.betsButton.TabIndex = 9;
+            this.betsButton.Text = "Bets";
+            this.betsButton.UseVisualStyleBackColor = true;
+            // 
+            // alBetLabel
+            // 
+            this.alBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alBetLabel.Location = new System.Drawing.Point(251, 150);
+            this.alBetLabel.Name = "alBetLabel";
+            this.alBetLabel.Size = new System.Drawing.Size(100, 23);
+            this.alBetLabel.TabIndex = 8;
+            this.alBetLabel.Text = "alBetLabel";
+            // 
+            // bobBetLabel
+            // 
+            this.bobBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bobBetLabel.Location = new System.Drawing.Point(251, 111);
+            this.bobBetLabel.Name = "bobBetLabel";
+            this.bobBetLabel.Size = new System.Drawing.Size(100, 23);
+            this.bobBetLabel.TabIndex = 7;
+            this.bobBetLabel.Text = "bobBetLabel";
+            // 
+            // joeBetLabel
+            // 
+            this.joeBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.joeBetLabel.Location = new System.Drawing.Point(251, 71);
+            this.joeBetLabel.Name = "joeBetLabel";
+            this.joeBetLabel.Size = new System.Drawing.Size(100, 23);
+            this.joeBetLabel.TabIndex = 6;
+            this.joeBetLabel.Text = "joeBetLabel";
+            // 
+            // raceButton
+            // 
+            this.raceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raceButton.Location = new System.Drawing.Point(626, 78);
+            this.raceButton.Name = "raceButton";
+            this.raceButton.Size = new System.Drawing.Size(175, 82);
+            this.raceButton.TabIndex = 5;
+            this.raceButton.Text = "Race!";
+            this.raceButton.UseVisualStyleBackColor = true;
+            // 
+            // betsLabel
+            // 
+            this.betsLabel.AutoSize = true;
+            this.betsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.betsLabel.Location = new System.Drawing.Point(248, 34);
+            this.betsLabel.Name = "betsLabel";
+            this.betsLabel.Size = new System.Drawing.Size(35, 15);
+            this.betsLabel.TabIndex = 4;
+            this.betsLabel.Text = "Bets";
             // 
             // alRadioButton
             // 
@@ -171,94 +228,37 @@
             this.alRadioButton.Text = "alRadioButton";
             this.alRadioButton.UseVisualStyleBackColor = true;
             // 
-            // betsLabel
+            // bobRadioButton
             // 
-            this.betsLabel.AutoSize = true;
-            this.betsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.betsLabel.Location = new System.Drawing.Point(248, 34);
-            this.betsLabel.Name = "betsLabel";
-            this.betsLabel.Size = new System.Drawing.Size(35, 15);
-            this.betsLabel.TabIndex = 4;
-            this.betsLabel.Text = "Bets";
+            this.bobRadioButton.AutoSize = true;
+            this.bobRadioButton.Location = new System.Drawing.Point(10, 111);
+            this.bobRadioButton.Name = "bobRadioButton";
+            this.bobRadioButton.Size = new System.Drawing.Size(102, 17);
+            this.bobRadioButton.TabIndex = 2;
+            this.bobRadioButton.TabStop = true;
+            this.bobRadioButton.Text = "bobRadioButton";
+            this.bobRadioButton.UseVisualStyleBackColor = true;
             // 
-            // raceButton
+            // joeRadioButton
             // 
-            this.raceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raceButton.Location = new System.Drawing.Point(626, 78);
-            this.raceButton.Name = "raceButton";
-            this.raceButton.Size = new System.Drawing.Size(175, 82);
-            this.raceButton.TabIndex = 5;
-            this.raceButton.Text = "Race!";
-            this.raceButton.UseVisualStyleBackColor = true;
+            this.joeRadioButton.AutoSize = true;
+            this.joeRadioButton.Location = new System.Drawing.Point(10, 71);
+            this.joeRadioButton.Name = "joeRadioButton";
+            this.joeRadioButton.Size = new System.Drawing.Size(98, 17);
+            this.joeRadioButton.TabIndex = 1;
+            this.joeRadioButton.TabStop = true;
+            this.joeRadioButton.Text = "joeRadioButton";
+            this.joeRadioButton.UseVisualStyleBackColor = true;
             // 
-            // joeBetLabel
+            // minimumBetLabel
             // 
-            this.joeBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.joeBetLabel.Location = new System.Drawing.Point(251, 71);
-            this.joeBetLabel.Name = "joeBetLabel";
-            this.joeBetLabel.Size = new System.Drawing.Size(100, 23);
-            this.joeBetLabel.TabIndex = 6;
-            this.joeBetLabel.Text = "joeBetLabel";
-            // 
-            // bobBetLabel
-            // 
-            this.bobBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bobBetLabel.Location = new System.Drawing.Point(251, 111);
-            this.bobBetLabel.Name = "bobBetLabel";
-            this.bobBetLabel.Size = new System.Drawing.Size(100, 23);
-            this.bobBetLabel.TabIndex = 7;
-            this.bobBetLabel.Text = "bobBetLabel";
-            // 
-            // alBetLabel
-            // 
-            this.alBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alBetLabel.Location = new System.Drawing.Point(251, 150);
-            this.alBetLabel.Name = "alBetLabel";
-            this.alBetLabel.Size = new System.Drawing.Size(100, 23);
-            this.alBetLabel.TabIndex = 8;
-            this.alBetLabel.Text = "alBetLabel";
-            // 
-            // betsButton
-            // 
-            this.betsButton.Location = new System.Drawing.Point(71, 192);
-            this.betsButton.Name = "betsButton";
-            this.betsButton.Size = new System.Drawing.Size(88, 34);
-            this.betsButton.TabIndex = 9;
-            this.betsButton.Text = "Bets";
-            this.betsButton.UseVisualStyleBackColor = true;
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(25, 203);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(33, 13);
-            this.nameLabel.TabIndex = 10;
-            this.nameLabel.Text = "name";
-            // 
-            // amountUpDown
-            // 
-            this.amountUpDown.Location = new System.Drawing.Point(176, 201);
-            this.amountUpDown.Name = "amountUpDown";
-            this.amountUpDown.Size = new System.Drawing.Size(46, 20);
-            this.amountUpDown.TabIndex = 11;
-            // 
-            // betBucksOnDogNumLabel
-            // 
-            this.betBucksOnDogNumLabel.AutoSize = true;
-            this.betBucksOnDogNumLabel.Location = new System.Drawing.Point(248, 203);
-            this.betBucksOnDogNumLabel.Name = "betBucksOnDogNumLabel";
-            this.betBucksOnDogNumLabel.Size = new System.Drawing.Size(110, 13);
-            this.betBucksOnDogNumLabel.TabIndex = 12;
-            this.betBucksOnDogNumLabel.Text = "bucks on dog number";
-            this.betBucksOnDogNumLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // dogNumUpDown
-            // 
-            this.dogNumUpDown.Location = new System.Drawing.Point(382, 201);
-            this.dogNumUpDown.Name = "dogNumUpDown";
-            this.dogNumUpDown.Size = new System.Drawing.Size(46, 20);
-            this.dogNumUpDown.TabIndex = 13;
+            this.minimumBetLabel.AutoSize = true;
+            this.minimumBetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimumBetLabel.Location = new System.Drawing.Point(7, 34);
+            this.minimumBetLabel.Name = "minimumBetLabel";
+            this.minimumBetLabel.Size = new System.Drawing.Size(124, 15);
+            this.minimumBetLabel.TabIndex = 0;
+            this.minimumBetLabel.Text = "minimumBetLabel";
             // 
             // Form1
             // 
@@ -282,8 +282,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dog2PictureBox)).EndInit();
             this.BettingParlorGroupBox.ResumeLayout(false);
             this.BettingParlorGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.amountUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amountUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
