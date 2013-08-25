@@ -23,10 +23,10 @@ namespace ADayAtTheRaces
             RacetrackLength = 800;  //Figure out what this value should be.
         }
 
-       /* 1. Move forward a random space between 1 and 4.
-        * 2. Update the position of MyPictureBox on the form.
-        * 3. Return true if Greyhound wins the race.
-        */
+        /* 1. Move forward a random space between 1 and 4.
+         * 2. Update the position of MyPictureBox on the form.
+         * 3. Return true if Greyhound wins the race.
+         */
         public bool Run()
         {
             int distance = Randomizer.Next(4) + 1;

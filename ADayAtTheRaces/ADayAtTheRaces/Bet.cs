@@ -34,12 +34,15 @@ namespace ADayAtTheRaces
             }
         }
 
+        /* 1. If the dog won, return the amount bet. 
+         *    Else return the negative of the amount bet.
+         */
         public int PayOut(int Winner)
         {
-            /* TODO:
-             * 1. If the dog won, return the amount bet. 
-             *    Else return the negative of the amount bet.
-             */
+            if (Dog == Winner)
+                return Amount;
+            else
+                return -1 * Amount;
         }
     }
 }

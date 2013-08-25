@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.racetrackPictureBox = new System.Windows.Forms.PictureBox();
-            this.Dog1PictureBox = new System.Windows.Forms.PictureBox();
-            this.Dog4PictureBox = new System.Windows.Forms.PictureBox();
-            this.Dog3PictureBox = new System.Windows.Forms.PictureBox();
-            this.Dog2PictureBox = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.BettingParlorGroupBox = new System.Windows.Forms.GroupBox();
             this.dogNumUpDown = new System.Windows.Forms.NumericUpDown();
@@ -50,63 +45,20 @@
             this.bobRadioButton = new System.Windows.Forms.RadioButton();
             this.joeRadioButton = new System.Windows.Forms.RadioButton();
             this.minimumBetLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog1PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog4PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog3PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog2PictureBox)).BeginInit();
+            this.Dog2PictureBox = new System.Windows.Forms.PictureBox();
+            this.Dog3PictureBox = new System.Windows.Forms.PictureBox();
+            this.Dog4PictureBox = new System.Windows.Forms.PictureBox();
+            this.Dog1PictureBox = new System.Windows.Forms.PictureBox();
+            this.racetrackPictureBox = new System.Windows.Forms.PictureBox();
             this.BettingParlorGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog2PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog3PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog4PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog1PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // racetrackPictureBox
-            // 
-            this.racetrackPictureBox.Image = global::ADayAtTheRaces.Properties.Resources.TrackPic;
-            this.racetrackPictureBox.Location = new System.Drawing.Point(12, 12);
-            this.racetrackPictureBox.Name = "racetrackPictureBox";
-            this.racetrackPictureBox.Size = new System.Drawing.Size(936, 300);
-            this.racetrackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.racetrackPictureBox.TabIndex = 0;
-            this.racetrackPictureBox.TabStop = false;
-            // 
-            // Dog1PictureBox
-            // 
-            this.Dog1PictureBox.Image = global::ADayAtTheRaces.Properties.Resources.dog_running;
-            this.Dog1PictureBox.Location = new System.Drawing.Point(41, 21);
-            this.Dog1PictureBox.Name = "Dog1PictureBox";
-            this.Dog1PictureBox.Size = new System.Drawing.Size(100, 50);
-            this.Dog1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Dog1PictureBox.TabIndex = 1;
-            this.Dog1PictureBox.TabStop = false;
-            // 
-            // Dog4PictureBox
-            // 
-            this.Dog4PictureBox.Location = new System.Drawing.Point(41, 248);
-            this.Dog4PictureBox.Name = "Dog4PictureBox";
-            this.Dog4PictureBox.Size = new System.Drawing.Size(100, 50);
-            this.Dog4PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Dog4PictureBox.TabIndex = 2;
-            this.Dog4PictureBox.TabStop = false;
-            // 
-            // Dog3PictureBox
-            // 
-            this.Dog3PictureBox.Location = new System.Drawing.Point(41, 174);
-            this.Dog3PictureBox.Name = "Dog3PictureBox";
-            this.Dog3PictureBox.Size = new System.Drawing.Size(100, 50);
-            this.Dog3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Dog3PictureBox.TabIndex = 3;
-            this.Dog3PictureBox.TabStop = false;
-            // 
-            // Dog2PictureBox
-            // 
-            this.Dog2PictureBox.Image = global::ADayAtTheRaces.Properties.Resources.pandaSliding;
-            this.Dog2PictureBox.Location = new System.Drawing.Point(41, 98);
-            this.Dog2PictureBox.Name = "Dog2PictureBox";
-            this.Dog2PictureBox.Size = new System.Drawing.Size(100, 50);
-            this.Dog2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Dog2PictureBox.TabIndex = 4;
-            this.Dog2PictureBox.TabStop = false;
             // 
             // BettingParlorGroupBox
             // 
@@ -263,6 +215,54 @@
             this.minimumBetLabel.TabIndex = 0;
             this.minimumBetLabel.Text = "minimumBetLabel";
             // 
+            // Dog2PictureBox
+            // 
+            this.Dog2PictureBox.Image = global::ADayAtTheRaces.Properties.Resources.pandaSliding;
+            this.Dog2PictureBox.Location = new System.Drawing.Point(41, 98);
+            this.Dog2PictureBox.Name = "Dog2PictureBox";
+            this.Dog2PictureBox.Size = new System.Drawing.Size(100, 50);
+            this.Dog2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Dog2PictureBox.TabIndex = 4;
+            this.Dog2PictureBox.TabStop = false;
+            // 
+            // Dog3PictureBox
+            // 
+            this.Dog3PictureBox.Location = new System.Drawing.Point(41, 174);
+            this.Dog3PictureBox.Name = "Dog3PictureBox";
+            this.Dog3PictureBox.Size = new System.Drawing.Size(100, 50);
+            this.Dog3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Dog3PictureBox.TabIndex = 3;
+            this.Dog3PictureBox.TabStop = false;
+            // 
+            // Dog4PictureBox
+            // 
+            this.Dog4PictureBox.Location = new System.Drawing.Point(41, 248);
+            this.Dog4PictureBox.Name = "Dog4PictureBox";
+            this.Dog4PictureBox.Size = new System.Drawing.Size(100, 50);
+            this.Dog4PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Dog4PictureBox.TabIndex = 2;
+            this.Dog4PictureBox.TabStop = false;
+            // 
+            // Dog1PictureBox
+            // 
+            this.Dog1PictureBox.Image = global::ADayAtTheRaces.Properties.Resources.dog_running;
+            this.Dog1PictureBox.Location = new System.Drawing.Point(41, 21);
+            this.Dog1PictureBox.Name = "Dog1PictureBox";
+            this.Dog1PictureBox.Size = new System.Drawing.Size(100, 50);
+            this.Dog1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Dog1PictureBox.TabIndex = 1;
+            this.Dog1PictureBox.TabStop = false;
+            // 
+            // racetrackPictureBox
+            // 
+            this.racetrackPictureBox.Image = global::ADayAtTheRaces.Properties.Resources.TrackPic;
+            this.racetrackPictureBox.Location = new System.Drawing.Point(12, 12);
+            this.racetrackPictureBox.Name = "racetrackPictureBox";
+            this.racetrackPictureBox.Size = new System.Drawing.Size(936, 300);
+            this.racetrackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.racetrackPictureBox.TabIndex = 0;
+            this.racetrackPictureBox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,15 +278,15 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "A Day At The Races";
-            ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog1PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog4PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog3PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dog2PictureBox)).EndInit();
             this.BettingParlorGroupBox.ResumeLayout(false);
             this.BettingParlorGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog2PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog3PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog4PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dog1PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

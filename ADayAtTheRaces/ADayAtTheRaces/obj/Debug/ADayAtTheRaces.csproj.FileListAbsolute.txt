@@ -20,3 +20,6 @@ C:\Users\Katie\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\D
 C:\Users\Katie\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.Form1.resources
 C:\Users\Katie\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.Properties.Resources.resources
 C:\Users\Katie\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.csproj.GenerateResource.Cache
+C:\Users\Katie\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\bin\Debug\ADayAtTheRaces.exe
+C:\Users\Katie\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\bin\Debug\ADayAtTheRaces.pdb
+C:\Users\Katie\Documents\GitHub\RacetrackSim\ADayAtTheRaces\ADayAtTheRaces\obj\Debug\ADayAtTheRaces.pdb
