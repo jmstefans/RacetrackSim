@@ -16,13 +16,27 @@ namespace ADayAtTheRaces
         public int Location = 0;
         public Random Randomizer;
 
+        public Greyhound(PictureBox picBox)
+        {
+            Randomizer = new Random();  //Instantiate earlier if all dogs are getting same time sequence.
+            MyPictureBox = picBox;
+            RacetrackLength = 800;  //Figure out what this value should be.
+        }
+
+       /* 1. Move forward a random space between 1 and 4.
+        * 2. Update the position of MyPictureBox on the form.
+        * 3. Return true if Greyhound wins the race.
+        */
         public bool Run()
         {
-            /*TODO:
-             * 1. Move forward a random space between 1 and 4.
-             * 2. Update the position of MyPictureBox on the form.
-             * 3. Return true if Greyhound wins the race.
-            */
+            int distance = Randomizer.Next(4) + 1;
+            Point p = MyPictureBox.Location;
+            p.X += distance;
+            MyPictureBox.Location = p;
+            if (MyPictureBox.Location.X >= RacetrackLength)
+                return true;
+            else
+                return false;
         }
 
         //Reset location to start line.
