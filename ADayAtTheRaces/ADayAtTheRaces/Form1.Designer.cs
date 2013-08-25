@@ -62,6 +62,7 @@
             // 
             // racetrackPictureBox
             // 
+            this.racetrackPictureBox.Image = global::ADayAtTheRaces.Properties.Resources.TrackPic;
             this.racetrackPictureBox.Location = new System.Drawing.Point(12, 12);
             this.racetrackPictureBox.Name = "racetrackPictureBox";
             this.racetrackPictureBox.Size = new System.Drawing.Size(936, 300);
@@ -71,7 +72,8 @@
             // 
             // Dog1PictureBox
             // 
-            this.Dog1PictureBox.Location = new System.Drawing.Point(41, 34);
+            this.Dog1PictureBox.Image = global::ADayAtTheRaces.Properties.Resources.dog_running;
+            this.Dog1PictureBox.Location = new System.Drawing.Point(41, 21);
             this.Dog1PictureBox.Name = "Dog1PictureBox";
             this.Dog1PictureBox.Size = new System.Drawing.Size(100, 50);
             this.Dog1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,7 +82,7 @@
             // 
             // Dog4PictureBox
             // 
-            this.Dog4PictureBox.Location = new System.Drawing.Point(41, 235);
+            this.Dog4PictureBox.Location = new System.Drawing.Point(41, 248);
             this.Dog4PictureBox.Name = "Dog4PictureBox";
             this.Dog4PictureBox.Size = new System.Drawing.Size(100, 50);
             this.Dog4PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,7 +91,7 @@
             // 
             // Dog3PictureBox
             // 
-            this.Dog3PictureBox.Location = new System.Drawing.Point(41, 168);
+            this.Dog3PictureBox.Location = new System.Drawing.Point(41, 174);
             this.Dog3PictureBox.Name = "Dog3PictureBox";
             this.Dog3PictureBox.Size = new System.Drawing.Size(100, 50);
             this.Dog3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,7 +100,8 @@
             // 
             // Dog2PictureBox
             // 
-            this.Dog2PictureBox.Location = new System.Drawing.Point(41, 102);
+            this.Dog2PictureBox.Image = global::ADayAtTheRaces.Properties.Resources.pandaSliding;
+            this.Dog2PictureBox.Location = new System.Drawing.Point(41, 98);
             this.Dog2PictureBox.Name = "Dog2PictureBox";
             this.Dog2PictureBox.Size = new System.Drawing.Size(100, 50);
             this.Dog2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
