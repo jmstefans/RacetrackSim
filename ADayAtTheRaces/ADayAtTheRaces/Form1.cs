@@ -12,13 +12,17 @@ namespace ADayAtTheRaces
 {
     public partial class Form1 : Form
     {
+        Guy Joe;
+        Guy Bob;
+        Guy Al;
+
         public Form1()
         {
             InitializeComponent();
             //Initialize Guy objects
-            Guy joe = new Guy("Joe", joeRadioButton, 50, joeBetLabel);
-            Guy bob = new Guy("Bob", bobRadioButton, 75, bobBetLabel);
-            Guy al = new Guy("Al", alRadioButton, 45, alBetLabel);
+            Joe = new Guy("Joe", joeRadioButton, 50, joeBetLabel);
+            Bob = new Guy("Bob", bobRadioButton, 75, bobBetLabel);
+            Al = new Guy("Al", alRadioButton, 45, alBetLabel);
         }
 
         private void joeRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -45,20 +49,24 @@ namespace ADayAtTheRaces
         {
             if (joeRadioButton.Checked)
             {
-                MessageBox.Show("Joe selected.");
+                Joe.PlaceBet((int)amountUpDown.Value, (int)dogNumUpDown.Value);
+                Joe.UpdateLabels();
             }
             else if (bobRadioButton.Checked)
             {
-                MessageBox.Show("Bob selected.");
+                Bob.PlaceBet((int)amountUpDown.Value, (int)dogNumUpDown.Value);
+                Bob.UpdateLabels();
             }
             else if (alRadioButton.Checked)
             {
-                MessageBox.Show("Al selected.");
+                Al.PlaceBet((int)amountUpDown.Value, (int)dogNumUpDown.Value);
+                Al.UpdateLabels();
             }
             else
             {
                 MessageBox.Show("No RadioButton is checked. Something went wrong.");
             }
         }
+
     }
 }

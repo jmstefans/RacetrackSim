@@ -156,27 +156,27 @@
             this.alBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.alBetLabel.Location = new System.Drawing.Point(251, 150);
             this.alBetLabel.Name = "alBetLabel";
-            this.alBetLabel.Size = new System.Drawing.Size(100, 23);
+            this.alBetLabel.Size = new System.Drawing.Size(126, 23);
             this.alBetLabel.TabIndex = 8;
-            this.alBetLabel.Text = "Al\'s Bet";
+            this.alBetLabel.Text = "Al hasn\'t placed a bet.";
             // 
             // bobBetLabel
             // 
             this.bobBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bobBetLabel.Location = new System.Drawing.Point(251, 111);
             this.bobBetLabel.Name = "bobBetLabel";
-            this.bobBetLabel.Size = new System.Drawing.Size(100, 23);
+            this.bobBetLabel.Size = new System.Drawing.Size(126, 23);
             this.bobBetLabel.TabIndex = 7;
-            this.bobBetLabel.Text = "Bob\'s Bet";
+            this.bobBetLabel.Text = "Bob hasn\'t placed a bet.";
             // 
             // joeBetLabel
             // 
             this.joeBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.joeBetLabel.Location = new System.Drawing.Point(251, 71);
             this.joeBetLabel.Name = "joeBetLabel";
-            this.joeBetLabel.Size = new System.Drawing.Size(100, 23);
+            this.joeBetLabel.Size = new System.Drawing.Size(126, 23);
             this.joeBetLabel.TabIndex = 6;
-            this.joeBetLabel.Text = "Joe\'s Bet";
+            this.joeBetLabel.Text = "Joe hasn\'t placed a bet.";
             // 
             // raceButton
             // 

@@ -18,7 +18,7 @@ namespace ADayAtTheRaces
         public Guy(string aName, RadioButton aRadioButton, int someCash, Label aLabel)
         {
             Name = aName;
-            MyBet = null;
+            MyBet = new Bet(0,0,this);
             Cash = someCash;
             MyRadioButton = aRadioButton;
             MyLabel = aLabel;
