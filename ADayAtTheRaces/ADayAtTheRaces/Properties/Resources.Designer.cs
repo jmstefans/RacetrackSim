@@ -63,9 +63,29 @@ namespace ADayAtTheRaces.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cheetah10_animated {
+            get {
+                object obj = ResourceManager.GetObject("cheetah10_animated", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dog_running {
             get {
                 object obj = ResourceManager.GetObject("dog-running", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap German_Shephard_Running {
+            get {
+                object obj = ResourceManager.GetObject("German_Shephard_Running", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
