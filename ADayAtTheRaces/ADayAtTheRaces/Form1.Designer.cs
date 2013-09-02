@@ -187,6 +187,7 @@
             this.raceButton.TabIndex = 5;
             this.raceButton.Text = "Race!";
             this.raceButton.UseVisualStyleBackColor = true;
+            this.raceButton.Click += new System.EventHandler(this.raceButton_Click);
             // 
             // betsLabel
             // 

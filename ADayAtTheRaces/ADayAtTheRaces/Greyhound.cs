@@ -18,9 +18,11 @@ namespace ADayAtTheRaces
 
         public Greyhound(PictureBox picBox)
         {
-            Randomizer = new Random();  //Instantiate earlier if all dogs are getting same time sequence.
-            MyPictureBox = picBox;
+            StartingPosition = 0;
             RacetrackLength = 800;  //Figure out what this value should be.
+            MyPictureBox = picBox;
+            TakeStartingPosition();
+            Randomizer = new Random();  //Instantiate earlier if all dogs are getting same time sequence.
         }
 
         /* 1. Move forward a random space between 1 and 4.
