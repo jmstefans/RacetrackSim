@@ -14,7 +14,7 @@ namespace ADayAtTheRaces
     {
         Guy[] guyArray = new Guy[3];
         Greyhound[] greyhoundArray = new Greyhound[4];
-        bool raceInProgress = false;
+        Random Randomizer = new Random();
 
         public Form1()
         {
@@ -24,10 +24,10 @@ namespace ADayAtTheRaces
             guyArray[1] = new Guy("Bob", bobRadioButton, 75, bobBetLabel);
             guyArray[2] = new Guy("Al", alRadioButton, 45, alBetLabel);
             //Initialize Geyhound objects
-            greyhoundArray[0] = new Greyhound(Dog1PictureBox);
-            greyhoundArray[1] = new Greyhound(Dog2PictureBox);
-            greyhoundArray[2] = new Greyhound(Dog3PictureBox);
-            greyhoundArray[3] = new Greyhound(Dog4PictureBox);
+            greyhoundArray[0] = new Greyhound(Dog1PictureBox, Randomizer);
+            greyhoundArray[1] = new Greyhound(Dog2PictureBox, Randomizer);
+            greyhoundArray[2] = new Greyhound(Dog3PictureBox, Randomizer);
+            greyhoundArray[3] = new Greyhound(Dog4PictureBox, Randomizer);
         }
 
         private void joeRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -75,26 +75,33 @@ namespace ADayAtTheRaces
 
         private void raceButton_Click(object sender, EventArgs e)
         {
-            if (!raceInProgress) {
-                raceInProgress = true;
-                int winner = -1;
-                while (raceInProgress) 
+            //Start the race.
+            timer.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < greyhoundArray.Length; i++)
+            {
+                if (greyhoundArray[i].Run())
                 {
-                    for (int i = 0; i < greyhoundArray.Length; i++)
+                    timer.Stop();
+                    MessageBox.Show("We have a winner - dog #" + (i+1));
+
+                    //Notify each guy which dog won so they can collect winnings.
+                    for (int j = 0; j < guyArray.Length; j++)
                     {
-                        //Run one pace and exit if we have a winner.
-                        if (greyhoundArray[i].Run()) //Returns true if Greyhound wins the race.
-                        {
-                            raceInProgress = false; //This dog just won the race, so stop the race.
-                            winner = i+1;
-                            break;
-                        }
+                        guyArray[j].Collect(i+1);
                     }
-                }
-                //Notify each guy which dog won so they can collect winnings.
-                for (int i = 0; i < guyArray.Length; i++)
-                {
-                    guyArray[i].Collect(winner);
+                    
+                    //Reset for next race.
+                    for (int j = 0; j < greyhoundArray.Length; j++)
+                    {
+                        greyhoundArray[j].TakeStartingPosition();
+                    }
+
+                    //Exit race.
+                    break;
                 }
             }
         }

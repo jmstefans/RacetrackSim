@@ -16,13 +16,13 @@ namespace ADayAtTheRaces
         public int Location = 0;
         public Random Randomizer;
 
-        public Greyhound(PictureBox picBox)
+        public Greyhound(PictureBox picBox, Random ran)
         {
             StartingPosition = 0;
-            RacetrackLength = 800;  //Figure out what this value should be.
+            RacetrackLength = 780;  //Figure out what this value should be.
             MyPictureBox = picBox;
             TakeStartingPosition();
-            Randomizer = new Random();  //Instantiate earlier if all dogs are getting same time sequence.
+            Randomizer = ran;
         }
 
         /* 1. Move forward a random space between 1 and 4.
@@ -44,7 +44,10 @@ namespace ADayAtTheRaces
         //Reset location to start line.
         public void TakeStartingPosition()
         {
-            this.Location = 0;
+            Location = 0;
+            Point p = MyPictureBox.Location;
+            p.X = 0;
+            MyPictureBox.Location = p;
         }
     }
 }

@@ -57,14 +57,18 @@ namespace ADayAtTheRaces
 
         public void Collect(int Winner)
         {
-            /* TODO:
-             * 1. Call Bet object to PayOut.
+            /* 1. Call Bet object to PayOut.
              * 2. Be gangsta rich.
              */
             if (MyBet != null)
-                MyBet.PayOut(Winner);
+            {
+                Cash += MyBet.PayOut(Winner);
+                UpdateLabels();
+            }
             else
+            {
                 MessageBox.Show("MyBet is null.");
+            }
         }
     }
 }

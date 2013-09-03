@@ -60,6 +60,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
+            // timer
+            // 
+            this.timer.Interval = 10;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // BettingParlorGroupBox
             // 
             this.BettingParlorGroupBox.Controls.Add(this.dogNumUpDown);
